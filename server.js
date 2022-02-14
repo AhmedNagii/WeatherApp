@@ -30,16 +30,17 @@ function listening(){
   console.log(`running on localhost: ${port}`);
 }
 
-
+// create route so we can get data later
 app.get ('/data' ,function( req, res) {
   res.send(projectData);
   console.log(projectData);
 });
 
+// create route so we can post data later
 
 app.post('/newData', function (req, res) {
 
-    projectData.temperature = req.body.temperature;
+    projectData.temperature = req.body.temp;
     projectData.date = req.body.date;
     projectData.userResponse = req.body.userResponse;
   
