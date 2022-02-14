@@ -20,16 +20,6 @@ app.use(cors());
 // Initialize the main project folder
 app.use(express.static('website'));
 
-
-
-
-
-
-
-
-
-
-
 let baseURL = 'api.openweathermap.org/data/2.5/weather?id=2172797&appid=97223487ae84a942296e1f01d1b6175e';
 let apiKey = '97223487ae84a942296e1f01d1b6175e';
 const newZip =  document.getElementById('zip').value;
