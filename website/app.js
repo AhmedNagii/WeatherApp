@@ -16,7 +16,7 @@ function performAction(e){
 const getZipCode = async (baseURL, zip, key)=>{
    
 console.log('trying to fatch');
-console.log(newZip);
+
   const responed = await fetch(baseURL+zip+'&appid='+key);
   console.log(responed);
   try {
